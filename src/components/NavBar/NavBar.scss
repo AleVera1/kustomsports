@@ -1,0 +1,109 @@
+@import '../../scss/variables.scss';
+
+header {
+  width: 100%;
+  max-width: 100%;
+
+  .preheader {
+    height: 25px;
+    background-color: gold;
+    color: black;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .header {
+    height: 70px;
+
+    .header-container {
+      @include center-layout();
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+
+      .ksp-logo {
+        img {
+          max-height: 90px;
+          width: auto;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .user {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      flex-wrap: nowrap;
+
+      .my-acc {
+        min-width: 96px;
+        cursor: pointer;
+        margin-right: 30px;
+
+        &::before {
+          content: "";
+          background-image: url('../../assets/icons/user.svg');
+          background-size: 17px;
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 17px;
+          height: 22px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .cart {
+      min-width: 96px;
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        background-image: url('../../assets/icons/cart.svg');
+        background-size: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 22px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    }
+  }
+  
+  .menu-container {
+    border-bottom: solid 1px black;
+    background-color: black;
+
+    ul {
+      @include center-layout();
+      height: 45px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      li {
+        list-style: none;
+        margin: 0 10px;
+        font-size: 16px;
+        line-height: 16px;
+        color: white;
+        cursor: pointer;
+        
+        &:hover {
+          color: gold;
+        }
+      }
+    }
+  }
+}
