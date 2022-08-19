@@ -1,0 +1,9 @@
+@import '../../scss/variables.scss';
+
+.item-list-container {
+  @include center-layout();
+  margin-top: 5px;
+  font-size: 22px;
+  text-align: center;
+  color: black;
+}
