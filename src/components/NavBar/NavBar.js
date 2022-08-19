@@ -1,5 +1,6 @@
 import './NavBar.scss'
 import logo from "../../assets/logos/ksp-logo.png"
+import CartWidget from "../CartWidget/CartWidget"
 
 const NavBar = () => {
   return (
@@ -12,7 +13,7 @@ const NavBar = () => {
           <div className="ksp-logo"><img alt="KustomSports Logo" title="KustomSports Logo" src={logo} /></div>
             <div className="user">
               <div className='my-acc'>Cuenta</div>
-              <div className='cart'>Carrito</div>
+              <CartWidget />
             </div>
         </div>
         <div className='menu-container'>
