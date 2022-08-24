@@ -1,8 +1,14 @@
 import "./ItemListContainer.scss"
+import ItemCount from '../ItemCount/ItemCount';
 
-const ItemListContainer = ( { greeting } ) => {
+const ItemListContainer = ( { greeting, stock, initial, onAdd } ) => {
   return (
-    <div className="item-list-container">{greeting}</div>
+    <section className="item-list-container">
+      <p>{greeting}</p>
+      <section className="products-container">
+        <ItemCount stock="5" initial= '1' onAdd={onAdd} />
+      </section>
+    </section>
   )
 }
 
