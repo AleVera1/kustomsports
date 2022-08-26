@@ -2,8 +2,16 @@
 
 .item-list-container {
   @include center-layout();
-  margin-top: 5px;
-  font-size: 22px;
+  margin-top: 20px;
+  font-size: 18px;
   text-align: center;
   color: black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-wrap: wrap;
+
+  @media (max-width: 1024px) {
+    justify-content: center;
+  }
 }

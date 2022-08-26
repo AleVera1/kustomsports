@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1",
+    "title": "Adidas Futurecraft 4D OG",
+    "description": "Zapatillas Adidas Futurecraft 4D OG de color negro.",
+    "price": "85450",
+    "pictureUrl": "assets/products/sneakers/adidas/adidas-futurecraft-4d-og-negras.png"
+  },
+  {
+    "id": "2",
+    "title": "Adidas Lite Racer Adapt 3.0",
+    "description": "Zapatillas Adidas Lite Racer Adapt 3.0 de color blanco.",
+    "price": "15200",
+    "pictureUrl": "assets/products/sneakers/adidas/adidas-lite-racer-adapt-3.0-blancas.png"
+  },
+  {
+    "id": "3",
+    "title": "Adidas X PW Human Race NMD",
+    "description": "Zapatillas Adidas X Pharrel William Human Race NMD.",
+    "price": "125000",
+    "pictureUrl": "assets/products/sneakers/adidas/adidas-x-pharrel-william-human-race-nmd.png"
+  },
+  {
+    "id": "4",
+    "title": "Nike Downshifter 11",
+    "description": "Zapatillas Nike Downshifter 11 de color negro.",
+    "price": "12500",
+    "pictureUrl": "assets/products/sneakers/nike/Zapatillas-Nike-Downshifter-11.png"
+  },
+  {
+    "id": "5",
+    "title": "Pantalon Adidas",
+    "description": "Pantalon de jogging Adidas.",
+    "price": "8500",
+    "pictureUrl": "assets/products/clothes/pantalon-adidas.png"
+  },
+  {
+    "id": "6",
+    "title": "Pantalon Nike",
+    "description": "Pantalon de jogging Nike.",
+    "price": "8500",
+    "pictureUrl": "assets/products/clothes/pantalon-nike.png"
+  },
+  {
+    "id": "7",
+    "title": "Remera Adidas",
+    "description": "Remera Adidas negra.",
+    "price": "4600",
+    "pictureUrl": "assets/products/clothes/remera-adidas.png"
+  },
+  {
+    "id": "8",
+    "title": "Remera Nike",
+    "description": "Remera Nike negra.",
+    "price": "4600",
+    "pictureUrl": "assets/products/clothes/remera-nike.png"
+  },
+  {
+    "id": "9",
+    "title": "Camiseta de Lanús",
+    "description": "La camiseta del club de barrio más grande del mundo de la temporada 22/23.",
+    "price": "10500",
+    "pictureUrl": "assets/products/football-shirts/camiseta-lanus.png"
+  },
+  {
+    "id": "10",
+    "title": "Camiseta de River Plate",
+    "description": "La camiseta de River Plate de la temporada 22/23.",
+    "price": "14512",
+    "pictureUrl": "assets/products/football-shirts/camiseta-river.png"
+  },
+  {
+    "id": "11",
+    "title": "Camiseta de Boca Juniors",
+    "description": "La camiseta de Boca Juniors de la temporada 22/23.",
+    "price": "12512",
+    "pictureUrl": "assets/products/football-shirts/camiseta-boca.png"
+  },
+  {
+    "id": "12",
+    "title": "Camiseta de Argentina",
+    "description": "La camiseta de la Selección Argentina para el Mundial de Qatar 2022.",
+    "price": "15512",
+    "pictureUrl": "assets/products/football-shirts/camiseta-arg.png"
+  }
+]
