@@ -8,7 +8,7 @@ class App extends React.Component {
     return(
       <div>
         <NavBar />
-        <ItemListContainer greeting="Bienvenidos a KustomSports" />
+        <ItemListContainer />
       </div>
     )
   }

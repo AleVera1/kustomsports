@@ -18,8 +18,8 @@ const NavBar = () => {
         </div>
         <div className='menu-container'>
           <ul>
-            <li className="menu-section">CALZADOS</li>
-            <li className="menu-section">INDUMENTARIA</li>
+            <li className="menu-section">ZAPATILLAS</li>
+            <li className="menu-section">ROPA</li>
             <li className="menu-section">CAMISETAS</li>
           </ul>
         </div>
