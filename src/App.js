@@ -1,17 +1,16 @@
 import React from 'react';
 import './index.css';
 import NavBar from "./components/NavBar/NavBar"
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
+/* import ItemListContainer from "./components/ItemListContainer/ItemListContainer" */
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer"
 
-class App extends React.Component {
-  render() {
-    return(
-      <div>
-        <NavBar />
-        <ItemListContainer />
-      </div>
-    )
-  }
+const App = () => {
+  return (
+    <div>
+      <NavBar />
+      <ItemDetailContainer />
+    </div>
+  )
 }
 
 export default App;

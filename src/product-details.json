@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1",
+    "title": "Adidas Futurecraft 4D OG",
+    "subtitle": "Zapatillas Adidas Futurecraft 4D OG de color negro.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus commodo pulvinar. Nulla pretium mattis sem. Ut in tortor est. Proin ornare suscipit libero id pretium. In posuere dolor ultricies, gravida diam sed, efficitur elit. Sed ac viverra nisl. Etiam consectetur sollicitudin leo eget consequat. Donec rutrum tellus sit amet facilisis fringilla.",
+    "price": "$85450",
+    "sku": "6542243",
+    "installments": "6 cuotas de $14241,66 sin interés",
+    "pictureUrl": "assets/products/sneakers/adidas/adidas-futurecraft-4d-og-negras.png"
+  },
+  {
+    "id": "2",
+    "title": "Adidas Lite Racer Adapt 3.0",
+    "subtitle": "Zapatillas Adidas Lite Racer Adapt 3.0 de color blanco.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus commodo pulvinar. Nulla pretium mattis sem. Ut in tortor est. Proin ornare suscipit libero id pretium. In posuere dolor ultricies, gravida diam sed, efficitur elit. Sed ac viverra nisl. Etiam consectetur sollicitudin leo eget consequat. Donec rutrum tellus sit amet facilisis fringilla.",
+    "price": "$15200",
+    "sku": "1234325",
+    "installments": "3 cuotas de $5066,66 sin interés",
+    "pictureUrl": "assets/products/sneakers/adidas/adidas-lite-racer-adapt-3.0-blancas.png"
+  },
+  {
+    "id": "3",
+    "title": "Adidas X PW Human Race NMD",
+    "subtitle": "Zapatillas Adidas X Pharrel William Human Race NMD.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus commodo pulvinar. Nulla pretium mattis sem. Ut in tortor est. Proin ornare suscipit libero id pretium. In posuere dolor ultricies, gravida diam sed, efficitur elit. Sed ac viverra nisl. Etiam consectetur sollicitudin leo eget consequat. Donec rutrum tellus sit amet facilisis fringilla.",
+    "price": "$125000",
+    "sku": "5643435",
+    "installments": "6 cuotas de $20833,33 sin interés",
+    "pictureUrl": "assets/products/sneakers/adidas/adidas-x-pharrel-william-human-race-nmd.png"
+  },
+  {
+    "id": "4",
+    "title": "Nike Downshifter 11",
+    "subtitle": "Zapatillas Nike Downshifter 11 de color negro.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus commodo pulvinar. Nulla pretium mattis sem. Ut in tortor est. Proin ornare suscipit libero id pretium. In posuere dolor ultricies, gravida diam sed, efficitur elit. Sed ac viverra nisl. Etiam consectetur sollicitudin leo eget consequat. Donec rutrum tellus sit amet facilisis fringilla.",
+    "price": "$12500",
+    "sku": "6543734",
+    "installments": "6 cuotas de $4166,66 sin interés",
+    "pictureUrl": "assets/products/sneakers/nike/Zapatillas-Nike-Downshifter-11.png"
+  },
+  {
+    "id": "5",
+    "title": "Pantalon Adidas",
+    "subtitle": "Pantalon de jogging Adidas.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus commodo pulvinar. Nulla pretium mattis sem. Ut in tortor est. Proin ornare suscipit libero id pretium. In posuere dolor ultricies, gravida diam sed, efficitur elit. Sed ac viverra nisl. Etiam consectetur sollicitudin leo eget consequat. Donec rutrum tellus sit amet facilisis fringilla.",
+    "price": "$8500",
+    "sku": "3456732",
+    "installments": "Sin cuotas.",
+    "pictureUrl": "assets/products/clothes/pantalon-adidas.png"
+  },
+  {
+    "id": "6",
+    "title": "Pantalon Nike",
+    "subtitle": "Pantalon de jogging Nike.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus commodo pulvinar. Nulla pretium mattis sem. Ut in tortor est. Proin ornare suscipit libero id pretium. In posuere dolor ultricies, gravida diam sed, efficitur elit. Sed ac viverra nisl. Etiam consectetur sollicitudin leo eget consequat. Donec rutrum tellus sit amet facilisis fringilla.",
+    "price": "$8500",
+    "sku": "7354674",
+    "installments": "Sin cuotas.",
+    "pictureUrl": "assets/products/clothes/pantalon-nike.png"
+  },
+  {
+    "id": "7",
+    "title": "Remera Adidas",
+    "subtitle": "Remera Adidas negra.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus commodo pulvinar. Nulla pretium mattis sem. Ut in tortor est. Proin ornare suscipit libero id pretium. In posuere dolor ultricies, gravida diam sed, efficitur elit. Sed ac viverra nisl. Etiam consectetur sollicitudin leo eget consequat. Donec rutrum tellus sit amet facilisis fringilla.",
+    "price": "$4600",
+    "sku": "6254353",
+    "installments": "Sin cuotas.",
+    "pictureUrl": "assets/products/clothes/remera-adidas.png"
+  },
+  {
+    "id": "8",
+    "title": "Remera Nike",
+    "subtitle": "Remera Nike negra.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus commodo pulvinar. Nulla pretium mattis sem. Ut in tortor est. Proin ornare suscipit libero id pretium. In posuere dolor ultricies, gravida diam sed, efficitur elit. Sed ac viverra nisl. Etiam consectetur sollicitudin leo eget consequat. Donec rutrum tellus sit amet facilisis fringilla.",
+    "price": "$4600",
+    "sku": "5123245",
+    "installments": "Sin cuotas.",
+    "pictureUrl": "assets/products/clothes/remera-nike.png"
+  },
+  {
+    "id": "9",
+    "title": "Camiseta de Lanús",
+    "subtitle": "La camiseta del club de barrio más grande del mundo de la temporada 22/23.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus commodo pulvinar. Nulla pretium mattis sem. Ut in tortor est. Proin ornare suscipit libero id pretium. In posuere dolor ultricies, gravida diam sed, efficitur elit. Sed ac viverra nisl. Etiam consectetur sollicitudin leo eget consequat. Donec rutrum tellus sit amet facilisis fringilla.",
+    "price": "$10500",
+    "sku": "2346236",
+    "installments": "Sin cuotas.",
+    "pictureUrl": "assets/products/football-shirts/camiseta-lanus.png"
+  },
+  {
+    "id": "10",
+    "title": "Camiseta de River Plate",
+    "subtitle": "La camiseta de River Plate de la temporada 22/23.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus commodo pulvinar. Nulla pretium mattis sem. Ut in tortor est. Proin ornare suscipit libero id pretium. In posuere dolor ultricies, gravida diam sed, efficitur elit. Sed ac viverra nisl. Etiam consectetur sollicitudin leo eget consequat. Donec rutrum tellus sit amet facilisis fringilla.",
+    "price": "$14500",
+    "sku": "9805534",
+    "installments": "3 cuotas de $4833,33 sin interés",
+    "pictureUrl": "assets/products/football-shirts/camiseta-river.png"
+  },
+  {
+    "id": "11",
+    "title": "Camiseta de Boca Juniors",
+    "subtitle": "La camiseta de Boca Juniors de la temporada 22/23.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus commodo pulvinar. Nulla pretium mattis sem. Ut in tortor est. Proin ornare suscipit libero id pretium. In posuere dolor ultricies, gravida diam sed, efficitur elit. Sed ac viverra nisl. Etiam consectetur sollicitudin leo eget consequat. Donec rutrum tellus sit amet facilisis fringilla.",
+    "price": "$14500",
+    "sku": "9123581",
+    "installments": "3 cuotas de $4833,33 sin interés",
+    "pictureUrl": "assets/products/football-shirts/camiseta-boca.png"
+  },
+  {
+    "id": "12",
+    "title": "Camiseta de Argentina",
+    "subtitle": "La camiseta de la Selección Argentina para el Mundial de Qatar 2022.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus commodo pulvinar. Nulla pretium mattis sem. Ut in tortor est. Proin ornare suscipit libero id pretium. In posuere dolor ultricies, gravida diam sed, efficitur elit. Sed ac viverra nisl. Etiam consectetur sollicitudin leo eget consequat. Donec rutrum tellus sit amet facilisis fringilla.",
+    "price": "$15500",
+    "sku": "5893480",
+    "installments": "3 cuotas de $5166,66 sin interés",
+    "pictureUrl": "assets/products/football-shirts/camiseta-arg.png"
+  }
+]
