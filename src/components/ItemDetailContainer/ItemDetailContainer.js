@@ -1,37 +1,27 @@
 import React, { useState, useEffect } from 'react'
 import ItemDetail from '../ItemDetail/ItemDetail'
-import axios from 'axios'
+import ProductDetails from '../../product-details.json'
 
 const ItemDetailContainer = () => {
-  const [productDetails, setProductDetails] = useState();
 	const [isLoading, setIsLoading] = useState(false);
-
-  console.log("hola");
+  const displayProductId = "1"
 
   useEffect(() => {
-    /* setIsLoading(true) */
-    getProducts()
+    const promise = new Promise((resolve) => {
+      setTimeout( () => resolve(ProductDetails), 2000)
+    });
+    promise.then((res) => setIsLoading(true))
+  }, []);
 
-    /* setTimeout(() => {
-      setIsLoading(false)
-    }, 1000) */
-  },[])
-
-
-  const getProducts = () => {
-    axios.get('product-details.json')
-      .then(async(response) => {
-        return setProductDetails(response.data)
-      })
-      .catch((error) => {
-        console.log(error)
-      })
+  const getItem = () => {
+    return ProductDetails.filter(item => item.id === displayProductId)
   }
 
-  return <>
-    <div>{isLoading ? <div><h4>Cargando...</h4></div> : <ItemDetail productDetails={productDetails} />}</div>
-    <h1>hola</h1>
-  </>
+  return ( 
+    <section>
+      <ItemDetail product={getItem()} loading={isLoading} />
+    </section>
+  )
 }
 
 export default ItemDetailContainer
