@@ -8,7 +8,7 @@ const ItemDetail = ({ product, loading}) => {
         <div className='pdp'>
           <div className="pdp-container">
             <div className="pdp-img">
-            <img src={product[0].pictureUrl} alt=''/>
+            <img src={`../${product[0].pictureUrl}`} alt=''/>
           </div>
           <div className="pdp-details">
               <div className="pdp-content">
@@ -31,7 +31,7 @@ const ItemDetail = ({ product, loading}) => {
     )
     }
     else {
-      return <h4>Cargando...</h4>
+      return <div class="loader">Loading...</div>
     }
   }
   return displayProducts()

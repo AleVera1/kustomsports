@@ -3,27 +3,37 @@ import Products from '../../products.json'
 /* import ItemCount from '../ItemCount/ItemCount'; */
 import ItemList from '../ItemList/ItemList'
 import { useState, useEffect } from "react";
+import { useParams } from 'react-router-dom';
 
 const ItemListContainer = ( { props } ) => {
   const [loading, setLoading] = useState(false);
+  const [items, setItems] = useState([]);
+  const { name } = useParams();
 
-  useEffect(() => {
+  useEffect(()=>{
     const promise = new Promise((resolve) => {
-      setTimeout( () => resolve(Products), 2000)
-    });
-    promise.then((res) => setLoading(true))
-  }, []);
-
+      setTimeout(()=>{
+        if(name){
+          resolve(Products.filter((product)=> product.category === name));
+        }else{
+          resolve(Products);
+        }
+      }, 2000)
+    })
+    promise.then((res) => {
+      setItems(res);
+      setLoading(true);
+    })
+    return () => {
+      setLoading(false)
+    }
+  }, [name])
+  
   return <>
-    {/* <p>{props.greeting}</p>
-    <section className="product-cards">
-      <ItemCount stock="5" initial="1" onAdd={onAdd} />
-    </section> */}
-    
     <section className="item-list-container">
-      <ItemList items={Products} loading={loading} />
-    </section>
-    </>
+      <ItemList items={items} loading={loading} />
+    </section> 
+  </> 
 }
 
 export default ItemListContainer;

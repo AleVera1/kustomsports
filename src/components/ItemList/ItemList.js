@@ -1,15 +1,15 @@
 import Item from '../Item/Item';
 
 const ItemList = ({ items, loading }) => {
-  const displayElements = () => {
+  const displayProducts = () => {
     if(loading) {
       return items.map( (item, index) => <Item item={item} key={index} />)
     }
     else {
-      return <h4>Cargando...</h4>
+      return <div class="loader">Loading...</div>
     }
   }
-  return displayElements()
+  return displayProducts()
 }
 
 export default ItemList;
