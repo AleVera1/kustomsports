@@ -1,6 +1,7 @@
 import './NavBar.scss'
 import logo from "../../assets/logos/ksp-logo.png"
 import CartWidget from "../CartWidget/CartWidget"
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
   return (
@@ -10,7 +11,7 @@ const NavBar = () => {
       </div>
       <div className="header">
         <div className="header-container">
-          <div className="ksp-logo"><img alt="KustomSports Logo" title="KustomSports Logo" src={logo} /></div>
+        <Link className="navbar-link" to={"/"}><div className="ksp-logo"><img alt="KustomSports Logo" title="KustomSports Logo" src={logo} /></div></Link>
             <div className="user">
               <div className='my-acc'>Cuenta</div>
               <CartWidget />
@@ -18,9 +19,10 @@ const NavBar = () => {
         </div>
         <div className='menu-container'>
           <ul>
-            <li className="menu-section">ZAPATILLAS</li>
-            <li className="menu-section">ROPA</li>
-            <li className="menu-section">CAMISETAS</li>
+            <Link className="navbar-link" to={"/"}><li className="menu-section">PRODUCTOS</li></Link>       
+            <Link className="navbar-link" to={"/categoria/zapatillas"}><li className="menu-section">ZAPATILLAS</li></Link>
+            <Link className="navbar-link" to={"/categoria/ropa"}><li className="menu-section">ROPA</li></Link>
+            <Link className="navbar-link" to={"/categoria/camisetas"}><li className="menu-section">CAMISETAS</li></Link>
           </ul>
         </div>
       </div>
