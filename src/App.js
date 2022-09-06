@@ -12,6 +12,7 @@ const App = () => {
       <Route path="/" element={<ItemListContainer />} />
       <Route path="/productos" element={<ItemListContainer />} />
       <Route path="/categoria/:name" element={<ItemListContainer />} />
+      <Route path="/item/:id" element={<ItemDetailContainer />} />
       <Route path="/producto/:id" element={<ItemDetailContainer />} />
     </Routes>
     </BrowserRouter>
