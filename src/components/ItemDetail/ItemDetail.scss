@@ -1,141 +1,119 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,800&display=swap');
+@import '../../scss/variables.scss';
 
-.pdp {
-    margin: 0;
-    padding: 0;
-    display: flex;
+.product-detail {
+  @include center-layout();
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 40px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    font-family: 'Poppins', sans-serif;
-    background-color: lightgrey;
-}
+    max-width: 100%;
+    width: 100%;
+  }
 
-.pdp-container {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 900px;
-    height: 600px;
-    background: #fff;
-    margin: 20px;
-}
+  .pdp-left {
+    max-width: 60%;
+    width: 100%;
 
-.pdp-container .pdp-img {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-    background: rgb(233, 199, 10);
-    transition: .3s linear;
-}
+    @media (max-width: 768px) {
+      max-width: 100px;
+      width: calc(100% - 40px);
+      margin: 0 auto;
+    }
+    
+    .pdp-img {
+      max-width: 90%;
+      width: 100%;
 
-.pdp-container .pdp-img:before {
-    content: 'KustomSports';
-    position: absolute;
-    top: 0px;
-    left: 24px;
-    color: #000;
-    opacity: 0.2;
-    font-size: 3.5em;
-    font-weight: 800;
-}
+      @media (max-width: 768px) {
+        max-width: 100%;
+        margin-bottom: 10px;
+      }
 
-.pdp-container .pdp-img img {
-    position: relative;
-    width: 300px;
-    transition: .9s linear;
-}
+      img {
+        width: 760px;
+        height: auto;
+        max-height: 700px;
+        object-fit: cover;
+      }
+    }
+  }
 
-.pdp-container .pdp-details {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-    box-sizing: border-box;
-    padding: 40px;
-}
+  .pdp-right {
+    max-width: 40%;
+    width: 100%;
 
-.pdp-container .pdp-details h2{
-    margin: 0;
-    padding: 0;
-    font-size: 2.4em;
-    line-height: 1em;
-    color: #444;
-}
+    @media (max-width: 768px) {
+      max-width: 100px;
+      width: calc(100% - 40px);
+      margin: 0 auto;
+    }
 
-.pdp-container .pdp-details h2 span {
-    font-size: 0.4em;
-    text-transform: uppercase;
-    line-height: 1em;
-    letter-spacing: 1px;
-    color: #999;
-}
+    .pdp-title {
+      font-size: 28px;
+      font-weight: 600;
+    }
+    
+    .pdp-sku {
+      font-size: 11px;
+    }
 
-.pdp-container .pdp-details p {
-    max-width: 85%;
-    margin-left: 15%;
-    color: #333;
-    font-size: 15px;
-    margin-bottom: 36px;
-}
+    .pdp-price {
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 20px;
+    }
 
-.pdp-container .pdp-details h3 {
-    margin: 0;
-    padding: 0;
-    font-size: 2.5em;
-    color: #a2a2a2;
-    float: left;
-}
-.pdp-container .pdp-details button {
-    background: #000;
-    color: #fff;
-    border: none;
-    outline: none;
-    padding: 15px 20px;
-    margin-top: 5px;
-    font-size: 16px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: 600;
-    border-radius: 40px;
-    float: right;
-    cursor: pointer;
+    .pdp-installments {
+      font-size: 14px;
+      color: grey;
+      margin-top: 8px;
+      padding-bottom: 20px;
+      border-bottom: solid 5px grey;
+    }
+    
+    .pdp-buy {
+      margin-top: 10px;
+    }
 
-    &:hover {
+    .pdp-description-container {
+      max-width: 90%;
+      
+      .pdp-description-title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+
+      .pdp-description {
+        line-height: 22px;
+      }
+    }
+
+    .text-added {
+      margin-bottom: 0;
+      color: gold;
+    }
+
+    .pdp-go-cart {
+      max-width: 300px;
+      width: 100%;
+      height: 40px;
+      margin: 10px 0;
+      text-transform: uppercase;
+      font-size: 16px;
+      background-color: #000000;
+      color: #FFFFFF;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
         opacity: 0.8;
+      }
     }
-}
-
-/* responsive */
-@media (max-width: 1080px) {
-    .pdp-container {
-        height: auto;
-    }
-    .pdp-container .pdp-img {
-        padding: 40px;
-        box-sizing: border-box;
-        width: 100% !important;
-        height: auto;
-        text-align: center;
-        overflow: hidden;
-    }
-    .pdp-container .pdp-img img {
-        left: initial;
-        max-width: 100%;
-        transform: rotate(0deg);
-    }
-    .pdp-details {
-        width: 100% !important;
-        height: auto;
-        padding: 20px;
-    }
-    .pdp-container .pdp-details p {
-        margin-left: 0;
-        max-width: 100%;
-    }
+  }
 }

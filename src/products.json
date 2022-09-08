@@ -91,7 +91,7 @@
     "id": "12",
     "title": "Camiseta de Argentina",
     "description": "La camiseta de la Selección Argentina para el Mundial de Qatar 2022.",
-    "price": "$15500",
+    "price": "15500",
     "category": "camisetas",
     "pictureUrl": "assets/products/football-shirts/camiseta-arg.png"
   }
