@@ -1,9 +1,6 @@
 import './ItemCount.scss'
-import { useState } from "react"
 
-const ItemCount = ({stock, initial, onAdd}) => {
-  const [count, setCount] = useState(parseInt(initial));
-
+const ItemCount = ({stock, initial, onAdd, item, setAddedProduct, count, setCount}) => {
   const changeQuantity = (op) => {
     if (op === "-" && count > 0) {
       setCount(count - 1);
@@ -20,7 +17,12 @@ const ItemCount = ({stock, initial, onAdd}) => {
         <button onClick={() => changeQuantity("+")}>+</button>
       </div>
       <p className='product-stock'>Stock disponible: {stock}</p>
-      <button onClick={() => onAdd(count)} className="pdp-buy-btn">AGREGAR AL CARRITO</button>
+      <div className='pdp-buy'>
+      <button onClick={() => {
+        onAdd(item, count)
+        setAddedProduct(true)
+      }} className="pdp-buy-btn">AGREGAR AL CARRITO</button>
+      </div>
     </div>
   )
 }
