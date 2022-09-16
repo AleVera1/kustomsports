@@ -7,14 +7,17 @@ const CartWidget = () => {
   const { cartItems } = useContext(CartContext)
 
   return (
-    <Link className="cart-link" to={"/cart"}>
+    <>
+    {cartItems.length > 0 && 
+      <Link className="cart-link" to={"/cart"}>
       <div className='cart'>
         <div className='cart-icon'>
           <span className='cart-counter'>{cartItems.length}</span>
         </div>
         Carrito
       </div>
-    </Link>
+      </Link>}
+    </>
   )
 }
 

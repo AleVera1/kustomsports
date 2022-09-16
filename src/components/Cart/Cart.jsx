@@ -62,7 +62,7 @@ const Cart = () => {
           <span className="cart-total-title">Total</span>
           <span className="cart-total-value">${totalPrice}</span>
         </p>
-        <button className="buy-btn" type="button">COMPRAR</button>
+        <button className="buy-btn" type="button">TERMINAR MI COMPRA</button>
       </div>
     </section> 
   );
