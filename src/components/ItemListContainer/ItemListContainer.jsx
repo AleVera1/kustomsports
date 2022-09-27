@@ -2,8 +2,7 @@ import './ItemListContainer.scss'
 import ItemList from '../ItemList/ItemList'
 import { useState, useEffect } from "react";
 import { useParams } from 'react-router-dom';
-import { collection, getDocs, query, where } from "firebase/firestore"
-import { db } from '../../firebase/firebaseConfig'
+import { getFirestore, collection, getDocs, query, where } from "firebase/firestore"
 
 const ItemListContainer = ( props ) => {
   const [loading, setLoading] = useState(false);
@@ -11,10 +10,11 @@ const ItemListContainer = ( props ) => {
   const { name } = useParams();
 
   useEffect(()=>{
-    const getCollection = collection(db, "products")
+    const db = getFirestore()
+    const itemCollection = collection(db, "products")
     
     if(name){
-      const filteredCollection = query(getCollection, where("category", "==", name))
+      const filteredCollection = query(itemCollection, where("category", "==", name))
       getDocs(filteredCollection).then( (snapshot) => {
         const items = snapshot.docs.map((doc) => ({
           id: doc.id,
@@ -24,7 +24,7 @@ const ItemListContainer = ( props ) => {
       })
     }
     else{
-      getDocs(getCollection).then( (snapshot) => {
+      getDocs(itemCollection).then( (snapshot) => {
         const items = snapshot.docs.map( (doc) => ({ id: doc.id, ...doc.data()}))
         setItems(items)
       })
