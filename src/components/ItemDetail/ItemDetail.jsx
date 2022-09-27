@@ -14,7 +14,7 @@ const ItemDetail = ({ product, loading}) => {
       return (
         <>
           <div className="pdp-left">
-            <div className="pdp-img"><img src={`../${product.pictureUrl}`} alt={product.title} /></div>
+            <div className="pdp-img"><img src={`${product.pictureUrl}`} alt={product.title} /></div>
           </div>
           <div className="pdp-right">
             <div className="pdp-title">{product.title}</div>

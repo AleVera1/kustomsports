@@ -6,7 +6,7 @@ const Item = ({ item }) => {
   let picture
 
   if (name) {
-    picture = '../'+item.pictureUrl
+    picture = item.pictureUrl
   }
   else {
     picture = item.pictureUrl
