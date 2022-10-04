@@ -43,23 +43,3 @@
   margin: 25px 0px 0px 20px;
   font-size: 14px;
 }
-
-.pdp-buy-btn {
-  background: #000;
-  color: #fff;
-  border: none;
-  outline: none;
-  margin: 25px 10px 0px 10px;
-  font-size: 16px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-weight: 600;
-  border-radius: 40px;
-  width: 150px;
-  height: 60px;
-  cursor: pointer;
-
-  &:hover {
-      opacity: 0.8;
-  }
-}

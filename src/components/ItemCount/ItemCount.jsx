@@ -18,10 +18,14 @@ const ItemCount = ({stock, initial, onAdd, item, setAddedProduct, count, setCoun
       </div>
       <p className='product-stock'>Stock disponible: {stock}</p>
       <div className='pdp-buy'>
-      <button onClick={() => {
-        onAdd(item, count)
-        setAddedProduct(true)
-      }} className="pdp-buy-btn">AGREGAR AL CARRITO</button>
+      {stock > 0 ? <button 
+        onClick={() => {
+          onAdd(item, count)
+          setAddedProduct(true)
+        }}>
+          AGREGAR AL CARRITO
+      </button> :
+      <div>NO HAY STOCK</div>}
       </div>
     </div>
   )
