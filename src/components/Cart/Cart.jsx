@@ -62,7 +62,7 @@ const Cart = () => {
           <span className="cart-total-title">Total</span>
           <span className="cart-total-value">${totalPrice}</span>
         </p>
-        {cartItems.length > 0 && <button className="buy-btn" type="button">TERMINAR MI COMPRA</button>}
+        {cartItems.length > 0 && <Link to="/checkout" className="go-checkout"><button className="buy-btn" type="button">TERMINAR MI COMPRA</button></Link>}
       </div>
     </section> 
   );

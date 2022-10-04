@@ -7,22 +7,35 @@ import { db } from '../../firebase/firebaseConfig'
 const ItemDetailContainer = () => {
 	const [isLoading, setIsLoading] = useState(false);
   const [product, setProduct] = useState(false)
+  const [productExist, setProductExist] = useState(false)
   const { id } = useParams()
 
   useEffect(() => {
     const docRef = doc(db, "products", id)
     getDoc(docRef).then((snapshot) => { 
       const data = {id: snapshot.id, ...snapshot.data()}
-      setProduct(data)
+
+      if(snapshot.exists()) {
+        setProductExist(true)
+        setProduct(data)
+      }
       setIsLoading(true)
       return data
     })
   }, [id]);
 
-  return ( 
-    <section className='product-detail'>
-      <ItemDetail product={product} loading={isLoading} />
-    </section>
+  return (
+    <>
+      {productExist ? (
+        <section className='product-detail'>
+          <ItemDetail product={product} loading={isLoading} />
+        </section>
+      ) : (
+        <section className='product-detail-error'>
+          <p>Producto no encontrado.</p>
+        </section>
+      )}
+    </>
   )
 }
 
